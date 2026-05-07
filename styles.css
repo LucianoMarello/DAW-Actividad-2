@@ -1,0 +1,182 @@
+.rosario3 {
+  margin: 15px;
+  width: 15%;
+  height: 15%;
+}
+
+nav {
+  padding: 20px;
+  padding-right: 0;
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+nav a {
+  color: rgb(255, 89, 0);
+  text-decoration: none;
+  margin-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+nav a:hover {
+  background-color: white;
+  color: rgb(255, 89, 0);
+  text-decoration: underline;
+}
+
+#iconMenuLateral {
+  background-color: rgb(255, 89, 0);
+  margin-top: 0;
+  margin-right: 0;
+  padding: 19px;
+  font-size: 18px;
+  color: white;
+}
+
+#cuerpo-noticia {
+  margin-left: 15%;
+  margin-right: 28%;
+}
+
+a {
+  color: rgb(255, 89, 0);
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: rgb(255, 89, 0);
+  color: white;
+}
+
+.fecha {
+  color: gray;
+  font-size: 18px;
+}
+
+.categoria {
+  background-color: rgb(255, 89, 0);
+  color: white;
+  margin-right: 400px;
+}
+
+#separador-nav {
+  background-color: rgb(255, 89, 0);
+  border: none;
+  height: 1px;
+  margin: 0;
+}
+
+#titulo {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.838);
+  margin: 15px;
+  margin-left: 0;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 20px;
+  margin-left: 0;
+  line-height: 1.6;
+}
+
+p::selection {
+  background-color: rgb(255, 225, 0);
+}
+
+#autoreferencia {
+  font-weight: 600;
+  color: gray;
+  font-size: 13px;
+}
+
+img {
+  width: 100%;
+}
+
+b {
+  font-weight: 700;
+}
+
+.pieFoto {
+  margin: 5px;
+  & b {
+    color: rgb(255, 89, 0);
+  }
+}
+
+.tweet {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+  &:hover {
+    background-color: rgba(224, 255, 255, 0.207);
+  }
+}
+
+.autorTweet {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+
+  & img {
+    width: 40px;
+    border-radius: 5px;
+  }
+}
+.autorTweet:hover {
+  background-color: inherit;
+  color: black;
+  text-decoration: underline;
+}
+
+.tweet button {
+  width: 100%;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  background-color: inherit;
+  color: rgb(0, 64, 255);
+  font-weight: 600;
+
+  &:hover {
+    background-color: lightblue;
+  }
+}
+
+#seguirLeyendo {
+  color: rgb(255, 89, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1000;
+  font-size: 80px;
+}
+
+#linksFinales a {
+  margin-left: 50px;
+}
+
+#formsPedorro {
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 40px;
+  & * {
+    margin: 5px;
+  }
+}
+#formsPedorro button {
+  width: 40%;
+  height: 30px;
+  background-color: rgba(9, 39, 233, 0.868);
+  color: yellow;
+  &:hover {
+    background-color: rgba(255, 234, 0, 0.858);
+    color: blue;
+  }
+}

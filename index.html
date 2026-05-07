@@ -7,17 +7,26 @@
       Rosario Central ganó un partidazo en Paraguay ante Libertad y se acomoda
       en la Copa Libertadores
     </title>
+    <link
+      rel="shortcut icon"
+      href="https://www.rosario3.com/__export/1559748440188/sites/rosario3/arte/v2/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href=".\reset.css" />
+    <link rel="stylesheet" href=".\styles.css" />
   </head>
   <body>
     <header>
       <a href="rosario3.com">
         <img
+          class="rosario3"
           src="https://www.rosario3.com/__export/1559661968129/sites/rosario3/arte/v2/r3-logo.svg"
           alt="logo rosario3"
         />
       </a>
-      <p>jue 16.04.2026</p>
+      <span class="fecha">jue 30.04.2026</span>
     </header>
+    <hr id="separador-nav" />
     <nav>
       <a href="">ÚLTIMAS NOTICIAS</a>
       <a href="">CIUDAD</a>
@@ -26,29 +35,31 @@
       <a href="">DEPORTES</a>
       <a href="">OCIO</a>
       <a href="">VIDEOS</a>
+      <a href="" id="iconMenuLateral">☰</a>
     </nav>
-    <section>
+    <section id="cuerpo-noticia">
       <!--Introduccion-->
-      <p>COPA LIBERTADORES</p>
-      <h1>
-        Rosario Central ganó un partidazo en Paraguay ante Libertad y se
-        acomodaen la Copa Libertadores
+      <span class="categoria">COPA LIBERTADORES</span>
+      <span class="fecha">15 de Abril del 2026</span>
+      <h1 id="titulo">
+        Rosario Central ganó un partidazo en Paraguay ante Libertad y se acomoda
+        en la Copa Libertadores
       </h1>
-      <h3>
+      <p>
         El equipo de Jorge Almirón venía de empatar ante Independiente del Valle
         en Rosario y la victoria en Asunción le devuelve el protagonismo en el
         Grupo H. Enzo Copetti hizo la diferencia a poco del final.
-      </h3>
-      <p>por ROSARIO3</p>
+      </p>
+      <p id="autoreferencia">por ROSARIO3</p>
       <article>
         <img
           src="https://www.rosario3.com/__export/1776299734445/sites/rosario3/img/2026/04/15/festeja_rc.jpg_1771607671.jpg"
           alt="gaaal"
         />
-        <p>
-          <strong> 1 de 1 | </strong>Copetti metió el gol de la victoria en
-          Asunción.
+        <p class="pieFoto">
+          <b> 1 de 1 | </b>Copetti metió el gol de la victoria en Asunción.
         </p>
+        <hr />
       </article>
       <p>
         <b
@@ -81,11 +92,15 @@
         por la derecha. Todo se jugaba en campo paraguayo. Pero
         <b>faltaba lo más importante: el gol.</b>
       </p>
-    </section>
-    <form>
-      <!--Primer Tweet-->
-      <fieldset>
-        <h3>SportsCenter</h3>
+      <form class="tweet">
+        <!--Primer Tweet-->
+        <a href="https://x.com/SC_ESPN" class="autorTweet"
+          ><img
+            src="https://pbs.twimg.com/profile_images/2005400294704766978/5RymGtKz_400x400.jpg"
+            alt="sportsCenter"
+          />
+          <span>SportsCenter</span>
+        </a>
         <p>
           ¿CÓMO NO FUE GOL DE ROSARIO CENTRAL? MILAGRO EN EL ÁREA DE LIBERTAD.
         </p>
@@ -97,9 +112,7 @@
         <hr />
         <p>❤️ 105 💬 Responder 🔗 Copia enlace</p>
         <button>Leer 2 Respuestas</button>
-      </fieldset>
-    </form>
-    <section>
+      </form>
       <!--Entre Tweets-->
       <p>
         De tanto ir y ver truncado su deseo, casi pasa a perderlo. Un pelotazo
@@ -116,54 +129,55 @@
       <hr />
       <p>
         En el inicio del complemento,
-        <strong>Ledesma volvió a salvar a Central,</strong> que ya no domina
-        como en la primera mitad ante Libertad.
-        <strong>Recalde de media vuelta; casi mete el primero.</strong> Y
-        enseguida, una pelota al lado del palo derecho del arco canalla hizo que
-        se paralizaran los corazones de los canallas que coparon el estadio en
-        Asunción.
+        <b>Ledesma volvió a salvar a Central,</b> que ya no domina como en la
+        primera mitad ante Libertad.
+        <b>Recalde de media vuelta; casi mete el primero.</b> Y enseguida, una
+        pelota al lado del palo derecho del arco canalla hizo que se paralizaran
+        los corazones de los canallas que coparon el estadio en Asunción.
       </p>
       <p>
-        Al rato, <strong>Iván Franco le dio al travesaño,</strong> mientras los
-        medios de Central corrían de atrás a los paraguayos, mirando su propio
-        arco. Aquella recuperación de balón rápida del primer tiempo ya no se
-        daba y el Canalla sufría. Central se deshilachó.
-        <strong
+        Al rato, <b>Iván Franco le dio al travesaño,</b> mientras los medios de
+        Central corrían de atrás a los paraguayos, mirando su propio arco.
+        Aquella recuperación de balón rápida del primer tiempo ya no se daba y
+        el Canalla sufría. Central se deshilachó.
+        <b
           >Perdió tensión en la presión, empezó a llegar tarde y a dejar
-          espacios.</strong
+          espacios.</b
         >
         Libertad se agrandó. Pero le duró poco porque tampoco pudo abrir el
         juego y se desilusionó.
       </p>
       <p>
-        <strong>Almirón metió un par de cambios</strong> que en principio no
-        decían mucho, pero que terminaron dando resultados.
-        <strong>Copetti a la cancha por Julián Fernández</strong> para acompañar
-        a Véliz. Pero luego cambió de idea y sacó al “9” para el ingreso de Pol
+        <b>Almirón metió un par de cambios</b> que en principio no decían mucho,
+        pero que terminaron dando resultados.
+        <b>Copetti a la cancha por Julián Fernández</b> para acompañar a Véliz.
+        Pero luego cambió de idea y sacó al “9” para el ingreso de Pol
         Fernández.
-        <strong
+        <b
           >Copetti encontró más espacios y los defensores perdieron
-          referencia.</strong
+          referencia.</b
         >
       </p>
       <p>
         Al cabo de ello,
-        <strong
+        <b
           >Central gestó el mismo gol que le hizo a Huracán por el Torneo
-          Apertura.</strong
+          Apertura.</b
         >
         Hizo rápido un lateral y
-        <strong
-          >esta vez fue Coronel el que hizo la diagonal por derecha.</strong
-        >
+        <b>esta vez fue Coronel el que hizo la diagonal por derecha.</b>
         El ex Banfield metió el pase entre líneas y
-        <strong>Copetti se acordó de la definición ante el Globo.</strong>
+        <b>Copetti se acordó de la definición ante el Globo.</b>
       </p>
-    </section>
-    <form>
-      <!--Segundo Tweet-->
-      <fieldset>
-        <h3>SportsCenter</h3>
+      <form class="tweet">
+        <!--Primer Tweet-->
+        <a href="https://x.com/SC_ESPN" class="autorTweet"
+          ><img
+            src="https://pbs.twimg.com/profile_images/2005400294704766978/5RymGtKz_400x400.jpg"
+            alt="sportsCenter"
+          />
+          <span>SportsCenter</span>
+        </a>
         <p>
           LATERAL RÁPIDO, ASISTENCIA DE CORONEL Y DEFINICIÓN DE ENZO COPETTI:
           gol de Rosario Central para el 1-0 ante Libertad en la CONMEBOL
@@ -177,13 +191,11 @@
         <hr />
         <p>❤️ 146 💬 Responder 🔗 Copia enlace</p>
         <button>Leer 1 Respuesta</button>
-      </fieldset>
-    </form>
-    <section>
+      </form>
       <p>
-        <strong
+        <b
           >Central se ponía a ganar un partido que había merecido en el primer
-          tiempo</strong
+          tiempo</b
         >
         y no tanto en el complemento. El final del duelo fue para sufrir, como
         cada vez que la diferencia en el resultado es mínima. Sin embargo,
@@ -195,14 +207,68 @@
         partido— y con un triunfo que vale oro. Además, revaloriza aquella
         igualdad en casa ante Independiente del Valle, el día del debut.
       </p>
-      <h2>SEGUÍ LEYENDO</h2>
+      <form id="formsPedorro">
+        <!--Formulario random-->
+        <fieldset>
+          <legend>Formulario</legend>
+          <label for="name"
+            >Nombre: <input type="text" id="name" required
+          /></label>
+          <label for="apellido">
+            Apellido: <input type="text" id="apellido" required />
+          </label>
+          <label for="email"
+            >Email: <input type="email" name="" id="email" required
+          /></label>
+          <br />
+          <label for="edad"
+            >Edad: <input type="number" name="" id="edad"
+          /></label>
+          <label for="nacionalidad">
+            Nacionalidad:
+            <select name="nacion" id="nacion">
+              <option value="arg">Argentina</option>
+              <option value="urug">Uruguay</option>
+              <option value="brasil">Brasil</option>
+              <option value="europeo">No se de futbol</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Genero</legend>
+            <label><input type="radio" name="Genero" id="" />Masculino</label>
+            <label><input type="radio" name="Genero" id="" />Femenino</label>
+            <label><input type="radio" name="Genero" id="" />Ninguno</label>
+            <label
+              ><input type="radio" name="Genero" id="" />Todas las
+              anteriores</label
+            >
+          </fieldset>
+          <label for="selecting">Forma de Pago:</label>
+          <select name="selecting" id="selecting">
+            <option value="credito">Credito</option>
+            <option value="debito">Debito</option>
+            <option value="efectivo">Efectivo</option>
+            <option value="transferencia">Transferencia</option>
+          </select>
+          <label for="tarjeta">
+            Datos de la Tarjeta:
+            <input type="number" name="" id="tarjeta" />
+          </label>
+          <br />
+          <button type="submit">Enviar Formulario</button>
+          <button type="reset">Resetear</button>
+        </fieldset>
+      </form>
+
+      <!--Parte final-->
+      <h2 id="seguirLeyendo">SEGUÍ LEYENDO</h2>
       <article>
         <figure>
           <img
             src="https://www.rosario3.com/__export/1776874156188/sites/rosario3/img/2026/04/22/psicologia_unr.jpg_1168834809.jpg"
             alt="psicologia UNR"
           />
-          <p>INFORMACIÓN GENERAL</p>
+          <span class="categoria">INFORMACIÓN GENERAL</span>
           <b>"Un sistema que avala el odio"</b>
         </figure>
       </article>
@@ -210,6 +276,7 @@
   </body>
   <footer>
     <img
+      class="rosario3"
       src="https://www.rosario3.com/__export/1559661968129/sites/rosario3/arte/v2/r3-logo.svg"
       alt="logo rosario3"
     />
@@ -217,10 +284,12 @@
     <p>© Copyright 2026 Rosario 3 ® Todos los derechos reservados</p>
     <p>Juan Domingo Perón 8101, Rosario. Teléfono: 4575415, interno 525</p>
     <hr />
-    <span>Quiénes somos</span>
-    <span>Términos y Condiciones</span>
-    <span>Ayuda</span>
-    <span>Contacto</span>
-    <span>Anuncia con nosotros</span>
+    <div id="linksFinales">
+      <a>Quiénes somos</a>
+      <a>Términos y Condiciones</a>
+      <a>Ayuda</a>
+      <a>Contacto</a>
+      <a>Anuncia con nosotros</a>
+    </div>
   </footer>
 </html>
