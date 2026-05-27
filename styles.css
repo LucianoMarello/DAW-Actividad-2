@@ -180,3 +180,100 @@ b {
     color: blue;
   }
 }
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .rosario3 {
+    width: 25%;
+  }
+
+  #cuerpo-noticia {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #titulo {
+    font-size: 40px;
+  }
+
+  .categoria {
+    margin-right: 0;
+  }
+
+  #seguirLeyendo {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rosario3 {
+    width: 50%;
+  }
+
+  header .fecha {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  nav a {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+  }
+
+  #iconMenuLateral {
+    position: static;
+    float: left;
+    width: 25%;
+    opacity: 1;
+  }
+
+  #cuerpo-noticia {
+    margin-left: 5%;
+    margin-right: 5%;
+    clear: both;
+  }
+
+  #titulo {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  #seguirLeyendo {
+    font-size: 35px;
+  }
+
+  #linksFinales {
+    overflow: hidden;
+  }
+
+  #linksFinales a {
+    float: left;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  #formsPedorro button {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
