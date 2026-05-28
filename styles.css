@@ -1,279 +1,227 @@
-.rosario3 {
-  margin: 15px;
-  width: 15%;
-  height: 15%;
+* {
+  box-sizing: border-box;
 }
 
-nav {
-  padding: 20px;
-  padding-right: 0;
-  text-align: right;
-  margin-bottom: 40px;
-}
-
-nav a {
-  color: rgb(255, 89, 0);
-  text-decoration: none;
-  margin-left: 30px;
+body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-}
-
-nav a:hover {
-  background-color: white;
-  color: rgb(255, 89, 0);
-  text-decoration: underline;
-}
-
-#iconMenuLateral {
-  background-color: rgb(255, 89, 0);
-  margin-top: 0;
-  margin-right: 0;
-  padding: 19px;
-  font-size: 18px;
-  color: white;
-}
-
-#cuerpo-noticia {
-  margin-left: 15%;
-  margin-right: 28%;
+  color: rgba(0, 0, 0, 0.838);
 }
 
 a {
   color: rgb(255, 89, 0);
+  text-decoration: none;
 }
 
-a:hover {
-  text-decoration: none;
-  background-color: rgb(255, 89, 0);
-  color: white;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.rosario3 {
+  width: 150px;
 }
 
 .fecha {
   color: gray;
-  font-size: 18px;
+  font-size: 14px;
+}
+
+#separador-nav {
+  border: none;
+  border-top: 1px solid rgb(255, 89, 0);
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+}
+
+nav a:not(#iconMenuLateral) {
+  display: none;
+}
+
+#iconMenuLateral {
+  display: block;
+  background-color: rgb(255, 89, 0);
+  color: white;
+  padding: 15px 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#cuerpo-noticia {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 100%;
 }
 
 .categoria {
   background-color: rgb(255, 89, 0);
   color: white;
-  margin-right: 400px;
-}
-
-#separador-nav {
-  background-color: rgb(255, 89, 0);
-  border: none;
-  height: 1px;
-  margin: 0;
+  padding: 5px 10px;
+  align-self: flex-start;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 #titulo {
   font-family: "Arial Black", Gadget, sans-serif;
-  font-weight: 700;
-  font-size: 50px;
+  font-size: 32px;
   line-height: 1.2;
-  color: rgba(0, 0, 0, 0.838);
-  margin: 15px;
-  margin-left: 0;
+  margin: 15px 0;
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin: 20px;
-  margin-left: 0;
+  font-size: 18px;
   line-height: 1.6;
-}
-
-p::selection {
-  background-color: rgb(255, 225, 0);
+  margin-bottom: 20px;
 }
 
 #autoreferencia {
   font-weight: 600;
   color: gray;
   font-size: 13px;
+  margin-bottom: 20px;
 }
 
 img {
-  width: 100%;
-}
-
-b {
-  font-weight: 700;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .pieFoto {
-  margin: 5px;
-  & b {
-    color: rgb(255, 89, 0);
-  }
+  font-size: 14px;
+  margin-top: 5px;
+  color: #333;
+}
+.pieFoto b {
+  color: rgb(255, 89, 0);
 }
 
-.tweet {
+.tweet,
+#formsPedorro {
+  display: flex;
+  flex-direction: column;
   border: 1px solid gray;
   border-radius: 10px;
   padding: 15px;
-  &:hover {
-    background-color: rgba(224, 255, 255, 0.207);
-  }
+  margin-bottom: 20px;
 }
 
 .autorTweet {
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-
-  & img {
-    width: 40px;
-    border-radius: 5px;
-  }
+  font-weight: bold;
+  margin-bottom: 15px;
 }
-.autorTweet:hover {
-  background-color: inherit;
-  color: black;
-  text-decoration: underline;
+
+.autorTweet img {
+  width: 40px;
+  border-radius: 5px;
+}
+
+.tweet button,
+#formsPedorro button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 
 .tweet button {
-  width: 100%;
-  height: 30px;
   border: 1px solid lightgray;
-  border-radius: 10px;
-  background-color: inherit;
-  color: rgb(0, 64, 255);
-  font-weight: 600;
+  background-color: transparent;
+  color: blue;
+}
 
-  &:hover {
-    background-color: lightblue;
-  }
+#formsPedorro button[type="submit"] {
+  background-color: rgba(9, 39, 233, 0.868);
+  color: yellow;
+}
+
+#formsPedorro fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: none;
 }
 
 #seguirLeyendo {
   color: rgb(255, 89, 0);
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 1000;
-  font-size: 80px;
+  font-size: 35px;
+  font-weight: 900;
+  margin: 30px 0 15px 0;
 }
 
-#linksFinales a {
-  margin-left: 50px;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 15px;
+  background-color: #f9f9f9;
 }
 
-#formsPedorro {
-  border: 2px solid black;
-  border-radius: 12px;
-  padding: 10px;
-  margin-bottom: 40px;
-  & * {
-    margin: 5px;
-  }
-}
-#formsPedorro button {
-  width: 40%;
-  height: 30px;
-  background-color: rgba(9, 39, 233, 0.868);
-  color: yellow;
-  &:hover {
-    background-color: rgba(255, 234, 0, 0.858);
-    color: blue;
-  }
+footer img {
+  width: 150px;
+  margin-bottom: 15px;
 }
 
-* {
-  box-sizing: border-box;
+#linksFinales {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-@media (max-width: 1024px) {
-  .rosario3 {
-    width: 25%;
-  }
-
+@media (min-width: 768px) {
   #cuerpo-noticia {
-    margin-left: 10%;
-    margin-right: 10%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
   }
 
   #titulo {
-    font-size: 40px;
-  }
-
-  .categoria {
-    margin-right: 0;
-  }
-
-  #seguirLeyendo {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  .rosario3 {
-    width: 50%;
-  }
-
-  header .fecha {
-    float: left;
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  nav {
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  nav a {
-    position: absolute;
-    left: -9999px;
-    opacity: 0;
-  }
-
-  #iconMenuLateral {
-    position: static;
-    float: left;
-    width: 25%;
-    opacity: 1;
-  }
-
-  #cuerpo-noticia {
-    margin-left: 5%;
-    margin-right: 5%;
-    clear: both;
-  }
-
-  #titulo {
-    font-size: 32px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
-  #seguirLeyendo {
-    font-size: 35px;
+    font-size: 45px;
   }
 
   #linksFinales {
-    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 30px;
   }
 
-  #linksFinales a {
-    float: left;
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 15px;
-    text-align: center;
+  nav a:not(#iconMenuLateral) {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
   }
 
-  #formsPedorro button {
-    float: left;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  nav a:not(#iconMenuLateral):hover {
+    text-decoration: underline;
+  }
+
+  #titulo {
+    font-size: 50px;
   }
 }
